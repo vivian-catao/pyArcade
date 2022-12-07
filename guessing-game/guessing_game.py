@@ -4,5 +4,8 @@ print("*********************************")
 
 def divination(n_secret, guess):
     if (n_secret != guess):
-        return False
-    else: return True
+        if guess > n_secret:
+            return 'lower'
+        elif guess < n_secret:
+            return 'higher'
+    else: return 'Congrats'

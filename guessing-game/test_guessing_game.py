@@ -17,7 +17,7 @@ class Test_guessing_game_behaviour(unittest.TestCase):
     def test_if_the_player_is_right_returns_True(self):
         n_secret = 30
         guess = 30
-        self.assertEqual(False, divination(n_secret, guess))
+        self.assertEqual(True, divination(n_secret, guess))
 
 
 if __name__=='__main__':

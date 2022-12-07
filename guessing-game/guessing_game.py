@@ -5,3 +5,4 @@ print("*********************************")
 def divination(n_secret, guess):
     if (n_secret != guess):
         return False
+    else: return True

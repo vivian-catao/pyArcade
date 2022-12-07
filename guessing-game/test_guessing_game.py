@@ -9,9 +9,14 @@ class Test_guessing_game_behaviour(unittest.TestCase):
     #def setUp(self):
     #    pass
 
-    def test_if_the_player_wrong_returns_False(self):
+    def test_if_the_player_is_wrong_returns_False(self):
         n_secret = 30
         guess = 20
+        self.assertEqual(False, divination(n_secret, guess))
+    
+    def test_if_the_player_is_right_returns_True(self):
+        n_secret = 30
+        guess = 30
         self.assertEqual(False, divination(n_secret, guess))
 
 
